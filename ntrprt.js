@@ -35,6 +35,10 @@
 			"module": "ntrprt ",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon"
+			],
 			"repository": "https://github.com/volkovasystems/ntrprt .git",
 			"test": "ntrprt -test.js",
 			"global": true
