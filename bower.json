@@ -1,13 +1,13 @@
 {
   "name": "ntrprt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Get symbol property value.",
   "main": "ntrprt.deploy.js",
   "support": "ntrprt.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon"
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "falzy": "^0.20.0",
-    "mtch": "^0.2.0",
+    "mtch": "^0.3.0",
     "protype": "^0.22.0"
   }
 }
