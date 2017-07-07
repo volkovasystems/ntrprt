@@ -37,7 +37,7 @@
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
 				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-				"Vinse Vinalon"
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"repository": "https://github.com/volkovasystems/ntrprt .git",
 			"test": "ntrprt -test.js",
@@ -89,7 +89,7 @@ const ntrprt  = function ntrprt( symbol, entity ){
 		throw new Error( "invalid entity" );
 	}
 
-	if( protype( symbol, SYMBOL ) ){
+	if( typeof symbol == SYMBOL ){
 		symbol = mtch( symbol.toString( ), SYMBOL_PATTERN, 1 );
 
 	}else{
