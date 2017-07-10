@@ -1,6 +1,6 @@
 {
   "name": "ntrprt",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Get symbol property value.",
   "main": "ntrprt.js",
   "support": "ntrprt.support.js",
@@ -34,7 +34,7 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "falzy": "^0.20.0",
-    "mtch": "^0.3.0",
+    "mtch": "^0.4.0",
     "protype": "^0.22.0"
   },
   "devDependencies": {
