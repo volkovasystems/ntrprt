@@ -1,0 +1,46 @@
+{
+	"stats": {
+		"suites": 5,
+		"tests": 2,
+		"passes": 2,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-07-30T07:49:20.100Z",
+		"end": "2017-07-30T07:49:20.105Z",
+		"duration": 5
+	},
+	"tests": [
+		{
+			"title": "should be equal to 12345",
+			"fullTitle": "ntrprt `ntrprt with first parameter of typeof Symbol` ntrprt( Symbol( 'hello' ), data ) should be equal to 12345",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 12345",
+			"fullTitle": "ntrprt `ntrprt with first parameter of typeof string` ntrprt( 'hello', data ) should be equal to 12345",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to 12345",
+			"fullTitle": "ntrprt `ntrprt with first parameter of typeof Symbol` ntrprt( Symbol( 'hello' ), data ) should be equal to 12345",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 12345",
+			"fullTitle": "ntrprt `ntrprt with first parameter of typeof string` ntrprt( 'hello', data ) should be equal to 12345",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
+}

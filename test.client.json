@@ -1,0 +1,139 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-07-30T07:49:21.067Z",
+	"end": "2017-07-30T07:49:55.817Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "ntrprt",
+			"duration": 0,
+			"start": "2017-07-30T07:49:55.475Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "ntrprt",
+			"duration": 0,
+			"start": "2017-07-30T07:49:55.475Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "ntrprt",
+			"duration": 157,
+			"start": "2017-07-30T07:49:55.477Z",
+			"end": "2017-07-30T07:49:55.634Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-07-30T07:49:55.481Z",
+					"end": "2017-07-30T07:49:55.482Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to 12345"
+				},
+				{
+					"start": "2017-07-30T07:49:55.592Z",
+					"end": "2017-07-30T07:49:55.593Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to 12345"
+				},
+				{
+					"start": "2017-07-30T07:49:55.593Z",
+					"end": "2017-07-30T07:49:55.594Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to 12345"
+				},
+				{
+					"start": "2017-07-30T07:49:55.634Z",
+					"end": "2017-07-30T07:49:55.634Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to 12345"
+				},
+				{
+					"start": "2017-07-30T07:49:55.635Z",
+					"end": "2017-07-30T07:49:55.635Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "ntrprt"
+				}
+			]
+		},
+		{
+			"name": "`ntrprt with first parameter of typeof Symbol`",
+			"duration": 115,
+			"start": "2017-07-30T07:49:55.478Z",
+			"end": "2017-07-30T07:49:55.593Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "ntrprt( Symbol( 'hello' ), data )",
+			"duration": 115,
+			"start": "2017-07-30T07:49:55.478Z",
+			"end": "2017-07-30T07:49:55.593Z",
+			"tests": [
+				{
+					"name": "should be equal to 12345",
+					"start": "2017-07-30T07:49:55.479Z",
+					"end": "2017-07-30T07:49:55.592Z",
+					"duration": 113,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`ntrprt with first parameter of typeof string`",
+			"duration": 41,
+			"start": "2017-07-30T07:49:55.593Z",
+			"end": "2017-07-30T07:49:55.634Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "ntrprt( 'hello', data )",
+			"duration": 41,
+			"start": "2017-07-30T07:49:55.593Z",
+			"end": "2017-07-30T07:49:55.634Z",
+			"tests": [
+				{
+					"name": "should be equal to 12345",
+					"start": "2017-07-30T07:49:55.593Z",
+					"end": "2017-07-30T07:49:55.634Z",
+					"duration": 41,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
