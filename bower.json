@@ -1,6 +1,6 @@
 {
 	"name": "ntrprt",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "Get symbol property value.",
 	"main": "ntrprt.deploy.js",
 	"support": "ntrprt.support.js",
