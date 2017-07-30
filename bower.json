@@ -1,33 +1,33 @@
 {
-	"name": "ntrprt",
-	"version": "0.6.0",
-	"description": "Get symbol property value.",
-	"main": "ntrprt.deploy.js",
-	"support": "ntrprt.support.js",
-	"authors": [
-		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-		"Vinse Vinalon <vinsevinalon@gmail.com>"
-	],
-	"license": "MIT",
-	"keywords": [
-		"get",
-		"symbol",
-		"property",
-		"value",
-		"ntrprt"
-	],
-	"homepage": "https://github.com/volkovasystems/ntrprt",
-	"ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"test",
-		"tests"
-	],
-	"dependencies": {
-		"falzy": "^0.23.0",
-		"mtch": "^0.6.0",
-		"protype": "^0.24.0"
-	}
+  "name": "ntrprt",
+  "version": "0.6.0",
+  "description": "Get symbol property value.",
+  "main": "ntrprt.deploy.js",
+  "support": "ntrprt.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "get",
+    "symbol",
+    "property",
+    "value",
+    "ntrprt"
+  ],
+  "homepage": "https://github.com/volkovasystems/ntrprt",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "falzy": "^0.23.0",
+    "mtch": "^0.6.0",
+    "protype": "^0.24.0"
+  }
 }
