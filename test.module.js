@@ -169,11 +169,11 @@ describe( "ntrprt", ( ) => {
 					let result = browser.url( bridgeURL ).execute(
 
 						function( ){
-
+							//: @ignore:
 							let data = { };
 							data[ Symbol( "hello" ) ] = 12345;
 							return ntrprt( Symbol( "hello" ), data );
-
+							//: @end-ignore
 						}
 
 					).value;
@@ -195,11 +195,11 @@ describe( "ntrprt", ( ) => {
 					let result = browser.url( bridgeURL ).execute(
 
 						function( ){
-
+							//: @ignore:
 							let data = { };
 							data[ Symbol( "hello" ) ] = 12345;
 							return ntrprt( "hello", data );
-
+							//: @end-ignore
 						}
 
 					).value;
