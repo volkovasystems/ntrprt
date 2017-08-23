@@ -74,7 +74,7 @@ const path = require( "path" );
 
 describe( "ntrprt", ( ) => {
 
-	describe( "`ntrprt( Symbol( 'hello' ), data )`", ( ) => {
+	describe( "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
 
 			let data = { };
@@ -84,12 +84,12 @@ describe( "ntrprt", ( ) => {
 		} );
 	} );
 
-	describe( "`ntrprt( 'hello', data )`", ( ) => {
+	describe( "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
 
 			let data = { };
 			data[ Symbol( "hello" ) ] = 12345;
-			assert.equal( ntrprt( "hello", data ), 12345,  );
+			assert.equal( ntrprt( "hello", data ), 12345 );
 
 		} );
 	} );
@@ -102,7 +102,7 @@ describe( "ntrprt", ( ) => {
 
 describe( "ntrprt", ( ) => {
 
-	describe( "`ntrprt( Symbol( 'hello' ), data )`", ( ) => {
+	describe( "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
 
 			let data = { };
@@ -112,12 +112,12 @@ describe( "ntrprt", ( ) => {
 		} );
 	} );
 
-	describe( "`ntrprt( 'hello', data )`", ( ) => {
+	describe( "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
 
 			let data = { };
 			data[ Symbol( "hello" ) ] = 12345;
-			assert.equal( ntrprt( "hello", data ), 12345,  );
+			assert.equal( ntrprt( "hello", data ), 12345 );
 
 		} );
 	} );
@@ -132,17 +132,18 @@ describe( "ntrprt", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
-	describe( "`ntrprt( Symbol( 'hello' ), data )`", ( ) => {
+	describe( "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-					//: @ignore:
+
 					let data = { };
 					data[ Symbol( "hello" ) ] = 12345;
+
 					return ntrprt( Symbol( "hello" ), data );
-					//: @end-ignore
+
 				}
 
 			).value;
@@ -152,17 +153,18 @@ describe( "ntrprt", ( ) => {
 		} );
 	} );
 
-	describe( "`ntrprt( 'hello', data )`", ( ) => {
+	describe( "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-					//: @ignore:
+
 					let data = { };
 					data[ Symbol( "hello" ) ] = 12345;
+
 					return ntrprt( "hello", data );
-					//: @end-ignore
+
 				}
 
 			).value;
