@@ -1,46 +1,46 @@
 {
-  "stats": {
-    "suites": 5,
-    "tests": 2,
-    "passes": 2,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-20T04:13:22.771Z",
-    "end": "2017-08-20T04:13:22.785Z",
-    "duration": 14
-  },
-  "tests": [
-    {
-      "title": "should be equal to 12345",
-      "fullTitle": "ntrprt `ntrprt with first parameter of typeof Symbol` ntrprt( Symbol( 'hello' ), data ) should be equal to 12345",
-      "duration": 3,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 12345",
-      "fullTitle": "ntrprt `ntrprt with first parameter of typeof string` ntrprt( 'hello', data ) should be equal to 12345",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to 12345",
-      "fullTitle": "ntrprt `ntrprt with first parameter of typeof Symbol` ntrprt( Symbol( 'hello' ), data ) should be equal to 12345",
-      "duration": 3,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 12345",
-      "fullTitle": "ntrprt `ntrprt with first parameter of typeof string` ntrprt( 'hello', data ) should be equal to 12345",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 3,
+		"tests": 2,
+		"passes": 2,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-23T07:00:05.060Z",
+		"end": "2017-08-23T07:00:05.066Z",
+		"duration": 6
+	},
+	"tests": [
+		{
+			"title": "should be equal to 12345",
+			"fullTitle": "ntrprt `ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )` should be equal to 12345",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 12345",
+			"fullTitle": "ntrprt `ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )` should be equal to 12345",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to 12345",
+			"fullTitle": "ntrprt `ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )` should be equal to 12345",
+			"duration": 2,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 12345",
+			"fullTitle": "ntrprt `ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )` should be equal to 12345",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

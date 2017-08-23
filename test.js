@@ -70,40 +70,27 @@ const ntrprt = require( "./ntrprt.js" );
 
 describe( "ntrprt", ( ) => {
 
-	describe( "`ntrprt with first parameter of typeof Symbol`", ( ) => {
+	describe( "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
+		it( "should be equal to 12345", ( ) => {
 
-		describe( "ntrprt( Symbol( 'hello' ), data )", ( ) => {
-
-			it( "should be equal to 12345", ( ) => {
-
-				let data = { };
-				data[ Symbol( "hello" ) ] = 12345;
-				assert.equal( ntrprt( Symbol( "hello" ), data ), 12345 );
-
-			} );
+			let data = { };
+			data[ Symbol( "hello" ) ] = 12345;
+			assert.equal( ntrprt( Symbol( "hello" ), data ), 12345 );
 
 		} );
-
 	} );
 
-	describe( "`ntrprt with first parameter of typeof string`", ( ) => {
+	describe( "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
+		it( "should be equal to 12345", ( ) => {
 
-		describe( "ntrprt( 'hello', data )", ( ) => {
-
-			it( "should be equal to 12345", ( ) => {
-
-				let data = { };
-				data[ Symbol( "hello" ) ] = 12345;
-				assert.equal( ntrprt( "hello", data ), 12345,  );
-
-			} );
+			let data = { };
+			data[ Symbol( "hello" ) ] = 12345;
+			assert.equal( ntrprt( "hello", data ), 12345 );
 
 		} );
-
 	} );
 
 } );
-
 
 //: @end-server
 
