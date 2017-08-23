@@ -134,7 +134,7 @@ describe( "ntrprt", ( ) => {
 
 	describe( "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
-
+			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
@@ -147,7 +147,7 @@ describe( "ntrprt", ( ) => {
 				}
 
 			).value;
-
+			//: @end-ignore
 			assert.equal( result, 12345 );
 
 		} );
@@ -155,7 +155,7 @@ describe( "ntrprt", ( ) => {
 
 	describe( "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
-
+			//: @ignore:
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
@@ -168,7 +168,7 @@ describe( "ntrprt", ( ) => {
 				}
 
 			).value;
-
+			//: @end-ignore
 			assert.equal( result, 12345 );
 
 		} );
