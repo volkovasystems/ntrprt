@@ -72,9 +72,9 @@ describe( "ntrprt", ( ) => {
 
 	describe( "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
-
 			let data = { };
 			data[ Symbol( "hello" ) ] = 12345;
+
 			assert.equal( ntrprt( Symbol( "hello" ), data ), 12345 );
 
 		} );
@@ -82,10 +82,40 @@ describe( "ntrprt", ( ) => {
 
 	describe( "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
-
 			let data = { };
 			data[ Symbol( "hello" ) ] = 12345;
+
 			assert.equal( ntrprt( "hello", data ), 12345 );
+
+		} );
+	} );
+
+	describe( "`ntrprt( 1, { [ Symbol( 1 ) ]: 1 } )`", ( ) => {
+		it( "should be equal to 1", ( ) => {
+			let data = { };
+			data[ Symbol( 1 ) ] = 1;
+
+			assert.equal( ntrprt( 1, data ), 1 );
+
+		} );
+	} );
+
+	describe( "`ntrprt with string type as symbol parameter and function type as entity parameter`", ( ) => {
+		it( "should be equal to Symbol.for( 'extensive' )", ( ) => {
+			let Hello = function Hello( ){ };
+			Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
+
+			assert.equal( ntrprt( "extensive", Hello ), Symbol.for( "extensive" ) );
+
+		} );
+	} );
+
+	describe( "`ntrprt with symbol type as symbol parameter and function type as entity parameter`", ( ) => {
+		it( "should be equal to Symbol.for( 'extensive' )", ( ) => {
+			let Hello = function Hello( ){ };
+			Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
+
+			assert.equal( ntrprt( Symbol.for( "extensive" ), Hello ), Symbol.for( "extensive" ) );
 
 		} );
 	} );

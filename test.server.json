@@ -1,13 +1,13 @@
 {
 	"stats": {
-		"suites": 3,
-		"tests": 2,
-		"passes": 2,
+		"suites": 6,
+		"tests": 5,
+		"passes": 5,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-23T07:00:05.060Z",
-		"end": "2017-08-23T07:00:05.066Z",
-		"duration": 6
+		"start": "2017-09-20T08:13:44.408Z",
+		"end": "2017-09-20T08:13:44.415Z",
+		"duration": 7
 	},
 	"tests": [
 		{
@@ -20,7 +20,28 @@
 		{
 			"title": "should be equal to 12345",
 			"fullTitle": "ntrprt `ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )` should be equal to 12345",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 1",
+			"fullTitle": "ntrprt `ntrprt( 1, { [ Symbol( 1 ) ]: 1 } )` should be equal to 1",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to Symbol.for( 'extensive' )",
+			"fullTitle": "ntrprt `ntrprt with string type as symbol parameter and function type as entity parameter` should be equal to Symbol.for( 'extensive' )",
 			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to Symbol.for( 'extensive' )",
+			"fullTitle": "ntrprt `ntrprt with symbol type as symbol parameter and function type as entity parameter` should be equal to Symbol.for( 'extensive' )",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -38,7 +59,28 @@
 		{
 			"title": "should be equal to 12345",
 			"fullTitle": "ntrprt `ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )` should be equal to 12345",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 1",
+			"fullTitle": "ntrprt `ntrprt( 1, { [ Symbol( 1 ) ]: 1 } )` should be equal to 1",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to Symbol.for( 'extensive' )",
+			"fullTitle": "ntrprt `ntrprt with string type as symbol parameter and function type as entity parameter` should be equal to Symbol.for( 'extensive' )",
 			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to Symbol.for( 'extensive' )",
+			"fullTitle": "ntrprt `ntrprt with symbol type as symbol parameter and function type as entity parameter` should be equal to Symbol.for( 'extensive' )",
+			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
 		}

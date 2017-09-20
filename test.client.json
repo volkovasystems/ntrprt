@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 2,
+		"passed": 5,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-23T07:00:06.297Z",
-	"end": "2017-08-23T07:00:40.816Z",
+	"start": "2017-09-20T08:13:45.663Z",
+	"end": "2017-09-20T08:14:43.289Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,52 +28,100 @@
 		{
 			"name": "ntrprt",
 			"duration": 0,
-			"start": "2017-08-23T07:00:40.499Z",
+			"start": "2017-09-20T08:14:42.860Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "ntrprt",
-			"duration": 142,
-			"start": "2017-08-23T07:00:40.499Z",
-			"end": "2017-08-23T07:00:40.641Z",
+			"duration": 252,
+			"start": "2017-09-20T08:14:42.861Z",
+			"end": "2017-09-20T08:14:43.113Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-23T07:00:40.501Z",
-					"end": "2017-08-23T07:00:40.501Z",
+					"start": "2017-09-20T08:14:42.862Z",
+					"end": "2017-09-20T08:14:42.862Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "ntrprt",
 					"associatedTest": "should be equal to 12345"
 				},
 				{
-					"start": "2017-08-23T07:00:40.594Z",
-					"end": "2017-08-23T07:00:40.594Z",
+					"start": "2017-09-20T08:14:42.953Z",
+					"end": "2017-09-20T08:14:42.953Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "ntrprt",
 					"associatedTest": "should be equal to 12345"
 				},
 				{
-					"start": "2017-08-23T07:00:40.595Z",
-					"end": "2017-08-23T07:00:40.596Z",
+					"start": "2017-09-20T08:14:42.954Z",
+					"end": "2017-09-20T08:14:42.955Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "ntrprt",
 					"associatedTest": "should be equal to 12345"
 				},
 				{
-					"start": "2017-08-23T07:00:40.641Z",
-					"end": "2017-08-23T07:00:40.641Z",
+					"start": "2017-09-20T08:14:42.992Z",
+					"end": "2017-09-20T08:14:42.992Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "ntrprt",
 					"associatedTest": "should be equal to 12345"
 				},
 				{
-					"start": "2017-08-23T07:00:40.641Z",
-					"end": "2017-08-23T07:00:40.641Z",
+					"start": "2017-09-20T08:14:42.993Z",
+					"end": "2017-09-20T08:14:42.993Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to 1"
+				},
+				{
+					"start": "2017-09-20T08:14:43.037Z",
+					"end": "2017-09-20T08:14:43.037Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to 1"
+				},
+				{
+					"start": "2017-09-20T08:14:43.038Z",
+					"end": "2017-09-20T08:14:43.038Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to Symbol.for( 'extensive' )"
+				},
+				{
+					"start": "2017-09-20T08:14:43.074Z",
+					"end": "2017-09-20T08:14:43.074Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to Symbol.for( 'extensive' )"
+				},
+				{
+					"start": "2017-09-20T08:14:43.074Z",
+					"end": "2017-09-20T08:14:43.074Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to Symbol.for( 'extensive' )"
+				},
+				{
+					"start": "2017-09-20T08:14:43.112Z",
+					"end": "2017-09-20T08:14:43.112Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "ntrprt",
+					"associatedTest": "should be equal to Symbol.for( 'extensive' )"
+				},
+				{
+					"start": "2017-09-20T08:14:43.113Z",
+					"end": "2017-09-20T08:14:43.113Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "ntrprt"
@@ -82,15 +130,15 @@
 		},
 		{
 			"name": "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`",
-			"duration": 95,
-			"start": "2017-08-23T07:00:40.500Z",
-			"end": "2017-08-23T07:00:40.595Z",
+			"duration": 93,
+			"start": "2017-09-20T08:14:42.861Z",
+			"end": "2017-09-20T08:14:42.954Z",
 			"tests": [
 				{
 					"name": "should be equal to 12345",
-					"start": "2017-08-23T07:00:40.500Z",
-					"end": "2017-08-23T07:00:40.594Z",
-					"duration": 94,
+					"start": "2017-09-20T08:14:42.862Z",
+					"end": "2017-09-20T08:14:42.952Z",
+					"duration": 90,
 					"state": "pass"
 				}
 			],
@@ -98,15 +146,63 @@
 		},
 		{
 			"name": "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`",
-			"duration": 46,
-			"start": "2017-08-23T07:00:40.595Z",
-			"end": "2017-08-23T07:00:40.641Z",
+			"duration": 38,
+			"start": "2017-09-20T08:14:42.954Z",
+			"end": "2017-09-20T08:14:42.992Z",
 			"tests": [
 				{
 					"name": "should be equal to 12345",
-					"start": "2017-08-23T07:00:40.595Z",
-					"end": "2017-08-23T07:00:40.641Z",
-					"duration": 46,
+					"start": "2017-09-20T08:14:42.954Z",
+					"end": "2017-09-20T08:14:42.992Z",
+					"duration": 38,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`ntrprt( 1, { [ Symbol( 1 ) ]: 1 } )`",
+			"duration": 44,
+			"start": "2017-09-20T08:14:42.993Z",
+			"end": "2017-09-20T08:14:43.037Z",
+			"tests": [
+				{
+					"name": "should be equal to 1",
+					"start": "2017-09-20T08:14:42.993Z",
+					"end": "2017-09-20T08:14:43.037Z",
+					"duration": 44,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`ntrprt with string type as symbol parameter and function type as entity parameter`",
+			"duration": 37,
+			"start": "2017-09-20T08:14:43.037Z",
+			"end": "2017-09-20T08:14:43.074Z",
+			"tests": [
+				{
+					"name": "should be equal to Symbol.for( 'extensive' )",
+					"start": "2017-09-20T08:14:43.038Z",
+					"end": "2017-09-20T08:14:43.074Z",
+					"duration": 36,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`ntrprt with symbol type as symbol parameter and function type as entity parameter`",
+			"duration": 38,
+			"start": "2017-09-20T08:14:43.074Z",
+			"end": "2017-09-20T08:14:43.112Z",
+			"tests": [
+				{
+					"name": "should be equal to Symbol.for( 'extensive' )",
+					"start": "2017-09-20T08:14:43.074Z",
+					"end": "2017-09-20T08:14:43.112Z",
+					"duration": 38,
 					"state": "pass"
 				}
 			],
