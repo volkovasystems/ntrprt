@@ -76,7 +76,6 @@ describe( "ntrprt", ( ) => {
 
 	describe( "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
-
 			let data = { };
 			data[ Symbol( "hello" ) ] = 12345;
 
@@ -87,7 +86,6 @@ describe( "ntrprt", ( ) => {
 
 	describe( "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
-
 			let data = { };
 			data[ Symbol( "hello" ) ] = 12345;
 
@@ -102,6 +100,7 @@ describe( "ntrprt", ( ) => {
 			data[ Symbol( 1 ) ] = 1;
 
 			assert.equal( ntrprt( 1, data ), 1 );
+
 		} );
 	} );
 
@@ -135,7 +134,6 @@ describe( "ntrprt", ( ) => {
 
 	describe( "`ntrprt( Symbol( 'hello' ), { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
-
 			let data = { };
 			data[ Symbol( "hello" ) ] = 12345;
 
@@ -146,7 +144,6 @@ describe( "ntrprt", ( ) => {
 
 	describe( "`ntrprt( 'hello', { [ Symbol( 'hello' ) ]: 12345 } )`", ( ) => {
 		it( "should be equal to 12345", ( ) => {
-
 			let data = { };
 			data[ Symbol( "hello" ) ] = 12345;
 
@@ -200,12 +197,10 @@ describe( "ntrprt", ( ) => {
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-
 					let data = { };
 					data[ Symbol( "hello" ) ] = 12345;
 
 					return ntrprt( Symbol( "hello" ), data );
-
 				}
 
 			).value;
@@ -221,17 +216,76 @@ describe( "ntrprt", ( ) => {
 			let result = browser.url( bridgeURL ).execute(
 
 				function( ){
-
 					let data = { };
 					data[ Symbol( "hello" ) ] = 12345;
 
 					return ntrprt( "hello", data );
-
 				}
 
 			).value;
 			//: @end-ignore
+
 			assert.equal( result, 12345 );
+
+		} );
+	} );
+
+	describe( "`ntrprt( 1, { [ Symbol( 1 ) ]: 1 } )`", ( ) => {
+		it( "should be equal to 1", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let data = { };
+					data[ Symbol( 1 ) ] = 1;
+
+					return ntrprt( 1, data );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, 1 );
+
+		} );
+	} );
+
+	describe( "`ntrprt with string type as symbol parameter and function type as entity parameter`", ( ) => {
+		it( "should be equal to Symbol.for( 'extensive' )", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let Hello = function Hello( ){ };
+					Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
+
+					return ntrprt( "extensive", Hello ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "Symbol(extensive)" );
+
+		} );
+	} );
+
+	describe( "`ntrprt with symbol type as symbol parameter and function type as entity parameter`", ( ) => {
+		it( "should be equal to Symbol.for( 'extensive' )", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					let Hello = function Hello( ){ };
+					Hello[ Symbol.for( "extensive" ) ] = Symbol.for( "extensive" );
+
+					return ntrprt( Symbol.for( "extensive" ), Hello ).toString( );
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, "Symbol(extensive)" );
 
 		} );
 	} );
